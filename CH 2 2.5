@@ -1,1 +1,23 @@
+public class Exersice_5 {
 
+    public static void main(String[] Strings) {
+
+        double gratuityTotal = 1.5;
+		double gratuityRate = 0.15,
+                total = 11.5,
+                subtotal = 10;
+
+        @SuppressWarnings("resource")
+		Scanner input = new Scanner(System.in);
+
+        System.out.print("The gratuity is $" + gratuityTotal + " and total is $" + total);
+        subtotal = input.nextDouble();
+        gratuityRate = input.nextDouble();
+
+        gratuityTotal = subtotal * gratuityRate * .01;
+        total = subtotal + gratuityTotal;
+
+       
+
+    }
+}
