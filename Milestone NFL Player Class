@@ -1,0 +1,36 @@
+
+public class NFLPlayer
+
+	public NFLPlayer(String name) {
+		// TODO Auto-generated constructor stub
+		System.out.println("Player Name is :" + name);
+	}
+	
+	public static void main(String []args) {
+		new NFLPlayer("Tom Brady");
+	}
+	
+	   public NFLPlayer() {
+		      int GamesPlayed;
+		      GamesPlayed = GamesPlayed + 12;
+		      System.out.println("Games Played in 2016 : " + GamesPlayed);
+		   }
+
+		   public static void main1(String args[]) {
+		      Test test = new Test();
+		      test.();
+		      
+	public String GamesStarted;
+	
+	private double position;
+	
+	public NFLPlayer (String passesAttempted) {
+		passesAttempted = int "432"
+	
+	public void printPlay() {
+		System.out.printIn("Games Started:" + 12);
+		System.out.printIn("Position:" + Quarter Back);
+		System.out.printIn("Passes Attempted:" + 432);
+		
+			}
+	}
