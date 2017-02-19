@@ -1,3 +1,6 @@
+//  Write a program that will prompt the user to enter an hour in the 24-hour format and print it in the 12-hour format. Example, 18 prints 6pm.//
+
+
   String time = "3:30 PM";
 
     SimpleDateFormat date12Format = new SimpleDateFormat("hh:mm a");
