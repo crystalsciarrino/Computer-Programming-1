@@ -19,11 +19,11 @@ public class Exercise_18_17 {
 	}
 
 	public static int count(char[] chars, char ch, int high) {
-		if (high < 0) // Base case
+		if (high < 0)
 			return 0;
 		else if (chars[high] == ch) 
-			return 1 + count(chars, ch, high - 1); // Recursive call
+			return 1 + count(chars, ch, high - 1);
 		else
-			return count(chars, ch, high - 1); // Recursive call
+			return count(chars, ch, high - 1);
 	}
 }
