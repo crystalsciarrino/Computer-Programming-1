@@ -1,0 +1,22 @@
+public class 5.21 {
+
+    public static void main(String[] args) {
+    double yearlyInterestRate = 5.00;
+    Scanner input = new Scanner(System.in);
+    System.out.print("Number of Years: ");
+    int numberYears = input.nextInt();
+    System.out.printf("Loan amount: ");
+    double loanAmount = input.nextDouble();
+
+        System.out.printf("%-1s%20s%20s\n", "Interest Rate", "Monthly Payment","Final Payment Amount");
+        for ( ; yearlyInterestRate <= 8.00; yearlyInterestRate += 1 / 8) {
+            double monthlyInterestRate = yearlyInterestRate / 1200;
+            double monthlyPayment = loanAmount * monthlyInterestRate / (1 - 1 / Math.pow(1 + monthlyInterestRate, numberYears * 12));
+            double finalPaymentamount = monthlyPayment * numberYears * 12;
+            String str = "%";
+            System.out.printf("%-1.3f%s%17.2f%24.2f \n",yearlyInterestRate , str, ((int)(monthlyPayment * 100) / 100.0), ((int)(finalPaymentamount * 100) / 100.0));
+
+        }
+
+    }
+}
