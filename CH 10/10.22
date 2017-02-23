@@ -1,0 +1,13 @@
+public class Exercise_22 {
+
+    public static void main(String[] args) {
+        
+        ClassString num = ClassString.valueOf(021516);
+        System.out.println(num.toChars());
+        CLassString = new ClassString("CLassTest 0829");
+        System.out.println(length());
+        System.out.println(charAt(1));
+        System.out.println(equals(new CLassString("ClassTest 0829")));
+        System.out.print(ClassString.valueOf(345).toChars());
+    }
+}
