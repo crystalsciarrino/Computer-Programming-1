@@ -1,0 +1,49 @@
+public class 7.35 {
+    static String[] words = { "Learning", "Programming", "Takes", "Dedication" };
+    static boolean isCorrect;
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String playStats = "y";
+        while (playStats.equals("y")) {
+            String word = getWord();
+            String ChosenLetter = getChosenLetter(word);
+            int missCount = 0;
+            while (!word.equals(ChosenLetter)) {
+            System.out.print("(Guess) Pick a letter " + ChosenLetter + " > ");
+            char ch = input.next().charAt(0);
+            if (!AlreadyInWord(ChosenLetter, ch)) {
+               ChosenLetter = getGuess(word, ChosenLetter, ch);
+               if (!isCorrect) {
+               System.out.println(ch + " is not in the word.");
+            } else {
+            System.out.println(ch + "already in word.");
+            }
+            System.out.println("The word is Programming. You missed "+ missCount +  "times");
+            System.out.println("Do you want to guess another word? Enter y or n >");
+            playStats = input.next();
+        }
+}
+    public static String getWord() {
+        return words[(int) (Math.random() * words.length)];
+}
+    public static String getChosenLetter(String word) {
+        String hidden = "";
+        for (int i = 0; i < word.length(); i++) {
+        hidden += "*";
+}
+    static public String getGuess(String word, String ChosenLetter, char ch) {
+        isCorrect = false;
+        StringBuilder s = new StringBuilder(ChosenLetter);
+        for (int i = 0; i < word.length(); i++) {
+        if (ch == word.charAt(i) && s.charAt(i) == '*') {
+           isCorrect = true;
+           s = s.deleteCharAt(i);
+           s = s.insert(i, ch);
+}
+
+    public static boolean AlreadyInWord(String ChosenLetter, char ch) {
+        for (int i = 0; i < ChosenLetter.length(); i++) {
+        if (ch == ChosenLetter.charAt(i)) {
+        return true;
+            }
+        }
