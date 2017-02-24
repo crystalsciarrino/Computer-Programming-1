@@ -41,3 +41,27 @@ public String getPos() {
 public void setInterceptions(int newInterceptions) {
 		interceptions = newInterceptions;
 }
+
+public class EncapSetGet {
+	public static class RunEncap {
+
+		   public static void main(String args[]) {
+		      nFLPlayer encap = new nFLPlayer();
+		      encap.setName("Drew Brees");
+		      encap.setaTT_Comp(20);
+		      encap.setPos("Quarterback");
+		      encap.setpComp(70);
+		      encap.setYards(5208);
+		      encap.setTouchdowns(37);
+		      encap.setInterceptions(15);
+
+		      System.out.print("Name: " + encap.getName());
+		      System.out.print(" Position: " + encap.getPos());
+		      System.out.print(" Age: " + encap.getaTT_Comp());
+		      System.out.print(" % of pass attempts completed: " + encap.getpCOMP());
+		      System.out.print(" Yards: " + encap.getYards());
+		      System.out.print(" Touchdowns: " + encap.getTouchdowns());
+		      System.out.print(" Interceptions: " + encap.getInterceptions());
+		   }
+		}
+}
