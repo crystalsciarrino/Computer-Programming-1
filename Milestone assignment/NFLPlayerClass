@@ -1,0 +1,43 @@
+package NFLplayer;
+
+public class nFLPlayer {
+
+private String name;
+private String position;
+private int aTT_Comp;
+private int pComp;
+private int yards;
+private int touchdowns;
+private int interceptions;
+
+public int getInterceptions() {
+	return interceptions;
+}
+
+public int getTouchdowns() {
+	return touchdowns;
+}
+
+public int getYards() {
+	return yards;
+}
+
+public int getpCOMP() {
+	return pComp;
+}
+
+public int getaTT_Comp() {
+   return aTT_Comp;
+}
+
+public String getName() {
+   return name;
+}
+
+public String getPos() {
+   return position;
+}
+
+public void setInterceptions(int newInterceptions) {
+		interceptions = newInterceptions;
+}
