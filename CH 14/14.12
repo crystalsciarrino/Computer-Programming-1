@@ -1,4 +1,4 @@
-package Chapter_14;
+package Programming_exercises;
 
 import java.application.GradesApp;
 import java.scene.shape.Rectangle;
@@ -9,7 +9,7 @@ import java.scene.layout.Pane;
 import java.stage.Stage;
 import java.geometry.Insets;
 
-public class CH_14.12 extends GradesApp {
+public class Week_5_14_12 extends GradesApp {
     private static final double WIDTH = 400;
     private static final double HEIGHT = 400;
     private static final double LIMIT_HEIGHT = (HEIGHT / 2);
