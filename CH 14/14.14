@@ -1,4 +1,4 @@
-package Chapter_14;
+package Programming_exercises;
 
 import java.application.Application;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import java.scene.layout.Pane;
 import java.scene.shape.Shape;
 import java.stage.Stage;
 
-public class Exercise_14 extends Application {
+public class Week_5_14_14 extends Application {
     @Override
     public void start(Stage primaryStage) {
         Pane pane = new Pane();
