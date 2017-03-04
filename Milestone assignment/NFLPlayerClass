@@ -1,33 +1,23 @@
 package NFLplayer;
 
-public class nFLPlayer {
+public abstract class nFLPlayer {
 
 private String name;
 private String position;
-private int aTT_Comp;
-private int pComp;
-private int yards;
-private int touchdowns;
-private int interceptions;
+private int age;
+private int height;
+private int weight;
+private String experience;
+private String college;
 
-public int getInterceptions() {
-	return interceptions;
-}
-
-public int getTouchdowns() {
-	return touchdowns;
-}
-
-public int getYards() {
-	return yards;
-}
-
-public int getpCOMP() {
-	return pComp;
-}
-
-public int getaTT_Comp() {
-   return aTT_Comp;
+public nFLPlayer (String name, String position, int age, int height, int weight, String experience, String college) {
+	this.name = name;
+	this.position = position;
+	this.age = age;
+	this.height = height;
+	this.weight = weight;
+	this.experience = experience;
+	this.college = college;
 }
 
 public String getName() {
@@ -38,30 +28,59 @@ public String getPos() {
    return position;
 }
 
-public void setInterceptions(int newInterceptions) {
-		interceptions = newInterceptions;
+public int getAge() {
+	   return age;
+	}
+
+public int getHT() {
+	   return height;
+	}
+
+public int getWT() {
+	   return weight;
+	}
+
+public String getXP() {
+	   return experience;
+	}
+
+
+public String getColl() {
+	   return college;
+	}
+
+
+
+
+
+public void setName(String newName) {
+   name = newName;
 }
 
-public class EncapSetGet {
-	public static class RunEncap {
+public void setPos( String newPosition) {
+   position = newPosition;
+}
 
-		   public static void main(String args[]) {
-		      nFLPlayer encap = new nFLPlayer();
-		      encap.setName("Drew Brees");
-		      encap.setaTT_Comp(20);
-		      encap.setPos("Quarterback");
-		      encap.setpComp(70);
-		      encap.setYards(5208);
-		      encap.setTouchdowns(37);
-		      encap.setInterceptions(15);
-
-		      System.out.print("Name: " + encap.getName());
-		      System.out.print(" Position: " + encap.getPos());
-		      System.out.print(" Age: " + encap.getaTT_Comp());
-		      System.out.print(" % of pass attempts completed: " + encap.getpCOMP());
-		      System.out.print(" Yards: " + encap.getYards());
-		      System.out.print(" Touchdowns: " + encap.getTouchdowns());
-		      System.out.print(" Interceptions: " + encap.getInterceptions());
+public void setAge( int newAge) {
+	   age = newAge;
+}
+	   public void setHT( int newHT) {
+		   height = newHT;
+	   }
+		   public void setWT( int newWT) {
+			   weight = newWT;
 		   }
-		}
+			   public void setXP( String newXP) {
+				   experience = newXP;
+			   }	   
+				   public void setColl( String newCollege) {
+					   college = newCollege;
+				   }
+
+
+
+
+
 }
+
+
