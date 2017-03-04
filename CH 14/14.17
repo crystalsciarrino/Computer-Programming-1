@@ -1,4 +1,4 @@
-package Chapter_14;
+package Programming_exercises;
 
 import java.application.Application;
 import java.collections.ObservableList;
@@ -11,7 +11,7 @@ import java.scene.shape.Circle;
 import java.scene.shape.Line;
 import java.stage.Stage;
 
-public class CHapter_14_7 extends Application {
+public class Week_5_14_17 extends Application {
     private static double HEIGHT = 400;
     private static double WIDTH = 400;
     @Override
