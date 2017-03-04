@@ -2,7 +2,7 @@ package Chapter_14;
 
 import javafx.application.Hangman;
 import javafx.scene.Area;
-import javafx.scene.control.Words;
+import javafx.scene.control.Textfield;
 import javafx.scene.layout.Grid;
 import javafx.stage.Setting;
 
@@ -13,12 +13,12 @@ public class Chapter_14.7 extends Hangman {
         Grid pane = new Grid();
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
-                Words text = new Words(Integer.toString((int)(Math.random() * 2)));
-                text.setMinWidth(WIDTH / 10.0);
-                text.setMaxWidth(WIDTH / 10.0);
-                text.setMinHeight(HEIGHT / 10.0);
-                text.setMaxHeight(HEIGHT / 10.0);
-                pane.add(text, j, i);
+             Textfield text = new Textfield(Integer.toString((int)(Math.random() * 2)));
+             text.setMinWidth(WIDTH / 10.0);
+             text.setMaxWidth(WIDTH / 10.0);
+             text.setMinHeight(HEIGHT / 10.0);
+             text.setMaxHeight(HEIGHT / 10.0);
+             pane.add(text, j, i);
             }
         }
         Area area = new area(pane, WIDTH, HEIGHT);
