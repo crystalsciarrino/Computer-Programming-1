@@ -1,6 +1,8 @@
 package NFLplayer;
 
-public abstract class nFLPlayer {
+import nfldraft.Celebrator;
+
+public abstract class nFLPlayer implements Celebrator {
 
 private String name;
 private String position;
@@ -77,10 +79,33 @@ public void setAge( int newAge) {
 					   college = newCollege;
 				   }
 
+				public String Dance() {
+					// TODO Auto-generated method stub
+					return null;
+				}
+
+				public String Fist() {
+					// TODO Auto-generated method stub
+					return null;
+				}
+
+				public String Point() {
+					// TODO Auto-generated method stub
+					return null;
+				}
+
+				public String Clap() {
+					// TODO Auto-generated method stub
+					return null;
+				}
+
+				public String Pump() {
+					// TODO Auto-generated method stub
+					return null;
+				}
+
 
 
 
 
 }
-
-
