@@ -1,4 +1,4 @@
-package Chapter_13
+package CH_13
 
 import tools.Octagon
 
