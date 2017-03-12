@@ -37,6 +37,8 @@ public class DefensivePlayer extends nFLPlayer {
 	 	 	 		System.out.println("Player's College : "  + getColl());
 	 	 	 		return "Florida ";
 	 	 	 	}
+	 	 		
+	 	 		
 	 
 	 public DefensivePlayer (String name, String position, int age, int height, int weight, String experience, String college) {
 	     super(name, position, age, height, weight, experience, college);
@@ -66,5 +68,35 @@ public class DefensivePlayer extends nFLPlayer {
 		public void setSacks( int newSacks) {
 			Sacks = newSacks;
 		}
-	}	
+		@Override
+		public void celebrate() {
+			// TODO Auto-generated method stub
+			
+		}
+		@Override
+		public String Dance() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		@Override
+		public String Fist() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		@Override
+		public String Point() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		@Override
+		public String Clap() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		@Override
+		public String Pump() {
+			// TODO Auto-generated method stub
+			return null;
+		}
 
+	}
