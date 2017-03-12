@@ -72,6 +72,36 @@ public class OffensivePlayer extends nFLPlayer {
 	public void setaTT_Comp( int newaTT_Comp) {
    aTT_Comp = newaTT_Comp;
 	}
+	@Override
+	public void celebrate() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public String Dance() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public String Fist() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public String Point() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public String Clap() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public String Pump() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }	
 
 
