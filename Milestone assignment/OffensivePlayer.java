@@ -3,6 +3,7 @@ Package NFLDraft
 public class OffensivePlayer extends nFLplayer {
 
 //Variables determined for Offensive players throughout code. 
+
 	int Touchdowns;
 	
 	int PassingYards;
@@ -66,6 +67,9 @@ public class OffensivePlayer extends nFLplayer {
 	}
 }
 }
+
+//Inheritance from Celebrator Interface via nflplayer
+
 	@Override
 	public void celebrate() {
 		// TODO Auto-generated method stub
