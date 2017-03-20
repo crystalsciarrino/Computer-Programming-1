@@ -4,80 +4,90 @@ import nfldraft.Celebrator;
 
 public abstract class nFLPlayer implements Celebrator {
 
-private String name;
-private String position;
-private int age;
-private int height;
-private int weight;
-private String experience;
-private String college;
 
-public nFLPlayer (String name, String position, int age, int height, int weight, String experience, String college) {
-	this.name = name;
-	this.position = position;
-	this.age = age;
-	this.height = height;
-	this.weight = weight;
-	this.experience = experience;
-	this.college = college;
+public class nFLplayer{
+
+	public static void main(String[] args){
+	}
+	public String Name;
+	public String Position;
+	public String Experience;
+	public int Age;
+	public int Weight;
+	public int Height;
+	public String DraftDate;
+	public String College;
+
+	
+public nFLplayer (String name, String position, int age, int height, int weight, String experience, String college) {
+	this.Name = name;
+	this.Position = position;
+	this.Age = age;
+	this.Height = height;
+	this.Weight = weight;
+	this.Experience = experience;
+	this.College = college;
+}
+
+public nFLplayer() {
+	// TODO Auto-generated constructor stub
 }
 
 public String getName() {
-   return name;
+   return Name;
 }
 
 public String getPos() {
-   return position;
+   return Position;
 }
 
 public int getAge() {
-	   return age;
+	   return Age;
 	}
 
 public int getHT() {
-	   return height;
+	   return Height;
 	}
 
 public int getWT() {
-	   return weight;
+	   return Weight;
 	}
 
 public String getXP() {
-	   return experience;
+	   return Experience;
 	}
 
 
 public String getColl() {
-	   return college;
+	   return College;
 	}
 
 
-
-
-
 public void setName(String newName) {
-   name = newName;
+   Name = newName;
 }
 
 public void setPos( String newPosition) {
-   position = newPosition;
+   Position = newPosition;
 }
 
 public void setAge( int newAge) {
-	   age = newAge;
+	   Age = newAge;
 }
 	   public void setHT( int newHT) {
-		   height = newHT;
+		   Height = newHT;
 	   }
 		   public void setWT( int newWT) {
-			   weight = newWT;
+			   Weight = newWT;
 		   }
 			   public void setXP( String newXP) {
-				   experience = newXP;
+				   Experience = newXP;
 			   }	   
 				   public void setColl( String newCollege) {
-					   college = newCollege;
+					   College = newCollege;
 				   }
+}
+
 
 				public String Dance() {
 					// TODO Auto-generated method stub
