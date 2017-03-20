@@ -53,6 +53,9 @@ public void setSacks( int newSacks) {
 Sacks = newSacks;
 }
 }
+
+//Inheritance from Celebrator interface via nflplayer
+
 		@Override
 		public void celebrate() {
 			// TODO Auto-generated method stub
