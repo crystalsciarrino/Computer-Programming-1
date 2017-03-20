@@ -1,73 +1,58 @@
-package NFLplayer;
+Package NFLDraft
 
-public class DefensivePlayer extends nFLPlayer {
+//Variables defined for all Defensive Players
 
-	 private int Tackles;
-	 private int AS_Tackles;
-	 private int Sacks;
+public class DefensivePlayer extends nFLplayer {
 
-	 	public String getName() {
-	 		System.out.println("Player's name : "  + getName());
-	 		return " Keanu Neal ";
-	 	}
-	 	public String getPos() {
-	 		System.out.println(" Player's position : "  + getPos());
-	 		return " Safety ";
-	 	}
-	 	 	public int getAge() {
-	 	 		System.out.println("Player's Age:"  + getAge());
-	 	 		return 21;
-	 	 	}
-	 	 		public int getHT() {
-	 	 	 		System.out.println("Player's Height : "  + getHT() + " inches");
-	 	 	 		return 72 ;
-	 	 	 	}
-	 	 		
-	 	 		public int getWT() {
-	 	 	 		System.out.println("Player's Weight : "  + getWT() + " Pounds ");
-	 	 	 		return 211;
-	 	 	 	}
-	 	 		
-	 	 		public String getXP() {
-	 	 	 		System.out.println("Player's Experience Level:"  + getXP());
-	 	 	 		return " Rookie ";
-	 	 	 	}
-	 	 		
-	 	 		public String getColl() {
-	 	 	 		System.out.println("Player's College : "  + getColl());
-	 	 	 		return "Florida ";
-	 	 	 	}
-	 	 		
-	 	 		
-	 
-	 public DefensivePlayer (String name, String position, int age, int height, int weight, String experience, String college) {
-	     super(name, position, age, height, weight, experience, college);
-	     }
-	 		
-	 
-	 public int getTackles () {
-		 return Tackles;
+	int CombTackles;
+	
+	int Tackles;
+	
+	int AssistTckl;
+	
+	int Sacks;
+	
+	int ForceFumble;
+	
+	int FumbleRec;
+	
+	int IntThrown;
+	
 
-		 }
-	 public void setTackles( int newTackles) {
-		   Tackles = newTackles;	   	   
-	 	}
+public DefensivePlayer (String name, String position, int age, int height, int weight, String experience, String college) {
+super(name, position, age, height, weight, experience, college);
+}
 
-		public int getAS_Tackles() {
-			return AS_Tackles;
-		}
 
-		public int getSacks() {
-		   return Sacks;
-		}
+public DefensivePlayer() {
+	// TODO Auto-generated constructor stub
+}
 
-		public void setAS_Tackles( int newAS_Tackles) {
-		   AS_Tackles = newAS_Tackles;
-		}
 
-		public void setSacks( int newSacks) {
-			Sacks = newSacks;
-		}
+public int getTackles () {
+return Tackles;
+
+}
+public void setTackles( int newTackles) {
+Tackles = newTackles;	   	   
+}
+
+public int getAS_Tackles() {
+return AssistTckl;
+}
+
+public int getSacks() {
+return Sacks;
+}
+
+public void setAS_Tackles( int newAS_Tackles) {
+AssistTckl = newAS_Tackles;
+}
+
+public void setSacks( int newSacks) {
+Sacks = newSacks;
+}
+}
 		@Override
 		public void celebrate() {
 			// TODO Auto-generated method stub
