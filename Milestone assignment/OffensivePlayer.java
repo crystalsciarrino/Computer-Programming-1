@@ -1,7 +1,8 @@
+Package NFLDraft
 
 public class OffensivePlayer extends nFLplayer {
 
-
+//Variables determined for Offensive players throughout code. 
 	int Touchdowns;
 	
 	int PassingYards;
